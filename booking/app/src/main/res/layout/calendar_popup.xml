@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    android:background="@drawable/round_corner"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="@dimen/_5pxh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_100pxh"
+        android:layout_marginEnd="@dimen/_80pxh"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Chon ngay nhan phong"/>
+
+    <CalendarView
+        android:id="@+id/checkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </CalendarView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20pxh">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/btnNext"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_50pxh"
+            android:paddingStart="@dimen/_50pxh"
+            android:paddingTop="@dimen/_15pxv"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            style="@style/btnSolidRounded_1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReset"
+            style="@style/btnSolidRoundedOutline_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:paddingStart="@dimen/_50pxh"
+            android:paddingTop="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_50pxh"
+            android:paddingBottom="@dimen/_15pxv"
+            android:singleLine="true"
+            android:text="Reset"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

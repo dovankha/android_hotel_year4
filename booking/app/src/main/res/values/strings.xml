@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">booking</string>
+    <string name="msg_welcome_to_stay">Hello</string>
+    <string name="lbl_your_email">Your Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_login">Login</string>
+    <string name="msg_forgot_password">Forgot password</string>
+    <string name="lbl_or">Or</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="didn_t_receive_otp">"Didn't receive the OTP ?"</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="get_otp">Verify code</string>
+    <string name="phone_login">Using phone number</string>
+    <string name="title_activity_phone_login">phone_login</string>
+    <string name="lbl_your_phone">Your Phone</string>
+    <string name="msg_the_email_takes">"The email takes a couple minutes to arrive.Still didn't arrived yet?"</string>
+    <string name="lbl_log_in2">Log In</string>
+    <string name="lbl_back">Back</string>
+
+    <string name="msg_continue_with_f">Continue With Facebook</string>
+    <string name="lbl_send_email">Send Email</string>
+    <string name="msg_continue_with_g">Continue With Google</string>
+    <string name="msg_don_have_acc">"Don't have an account?"</string>
+    <string name="msg_sign_up">Sign up</string>
+
+    <!--    sign up-->
+    <string name="fullname">Full Name</string>
+    <string name="email">Your Email</string>
+    <string name="address">Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="pass">Password</string>
+    <string name="repass">Re-Enter Password</string>
+    <string name="sendcode">Send code</string>
+    <string name="policy">By ticking this you agree our term and condition here</string>
+    <!--   account -->
+    <string name="acc_fullname">Full Name</string>
+    <string name="acc_email">Email</string>
+    <string name="acc_address">Address</string>
+    <string name="acc_mobile">Mobile</string>
+    <string name="pop_currentpass">Current Password</string>
+    <string name="pop_newpass">New Password</string>
+    <string name="pop_confirmpass">Confirm Password</string>
+
+    <!--    TODO: MAP API KEY -->
+    <string name="map_api_key">AIzaSyCA84z0ztAikg137bIgkve5asZPt14Htnc</string>
+
+    <!--    Todo: PAYMENT-->
+    <string name="lbl_1">1</string>
+    <string name="lbl_2">2</string>
+    <string name="lbl_3">3</string>
+    <string name="king_bed">King Bed</string>
+    <string name="adult">Adult</string>
+    <string name="payment_methode">Payment Methode</string>
+    <string name="msg_debit_credit">Debit / Credit Card</string>
+    <string name="lbl_web_payment">Web Payment</string>
+    <string name="lbl_bank_transfer">Bank Transfer</string>
+    <string name="lbl_zalopay">Zalo pay</string>
+    <string name="lbl_pay_on_check_in">Pay on checkin</string>
+    <string name="lbl_pay_at_hotel">Pay at hotel</string>
+    <string name="msg_this_payment">This payment is secured by the advance machine and government security</string>
+    <string name="lbl_payment_success">Payment Success</string>
+    <string name="lbl_order_id">Order ID</string>
+
+    <!--    todo: MYBOOKING-->
+    <string name="lbl_my_booking">My booking</string>
+
+</resources>

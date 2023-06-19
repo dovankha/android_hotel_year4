@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_30pxh">
+
+        <RelativeLayout
+            android:id="@+id/block2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/search"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_10pxh"
+            android:layout_marginEnd="@dimen/_10pxh">
+
+            <TextView
+                android:id="@+id/popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Voucher"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:listitem="@layout/popular_hotel" />
+
+        <RelativeLayout
+            android:id="@+id/block3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/framehotelpopular"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_15pxh"
+            android:layout_marginEnd="@dimen/_10pxh">
+
+            <TextView
+                android:id="@+id/popularcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Hotels Around You"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popularcity"
+                android:text="Here's some hotel recommendation in your city"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:listitem="@layout/popular_hotel" />
+
+
+        <RelativeLayout
+            android:id="@+id/block4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/framecitypopular"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_15pxh"
+            android:layout_marginEnd="@dimen/_10pxh">
+
+            <TextView
+                android:id="@+id/ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Hotels Around You"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ads"
+                android:text="Here's some hotel recommendation in your city"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/poads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:listitem="@layout/popular_hotel" />
+
+        <RelativeLayout
+            android:id="@+id/block5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_15pxh"
+            android:layout_marginEnd="@dimen/_10pxh">
+
+            <TextView
+                android:id="@+id/ads1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Hotels Around You"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ads1"
+                android:text="Here's some hotel recommendation in your city"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/poads1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:listitem="@layout/popular_hotel" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

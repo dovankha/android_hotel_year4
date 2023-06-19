@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ui.mybooking.mybookingdetail">
+
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearPaymentSuccess"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_40pxh"
+        android:layout_marginEnd="@dimen/_40pxh"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/linearColumnpaymentsuccess"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/card">
+
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumncheckmark"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_83pxh"
+                android:layout_marginStart="@dimen/_83pxh"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                style="@style/groupStylelight_green_400_75cornerRadius">
+
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_light_green_400_radius_19"
+                    android:id="@+id/btnCheckmark"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_38pxh"
+                    android:layout_marginHorizontal="@dimen/_21pxh"
+                    android:layout_marginVertical="@dimen/_21pxv"
+                    android:layout_width="@dimen/_38pxh"
+                    android:paddingHorizontal="@dimen/_9pxh"
+                    android:paddingVertical="@dimen/_9pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_checkmark_38x38"
+                    tools:ignore="ContentDescription"/>
+            </LinearLayout>
+
+            <TextView android:id="@+id/txtPaymentSuccess"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="wrap_content"
+                android:text="My booking details"
+                style="@style/txtPoppinsbold32" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_35pxv">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/title_OrderID"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/lbl_order_id"
+                    style="@style/txtPoppinsregular16"
+                    tools:text="@string/lbl_order_id"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/txtOrderID"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_30pxh"
+                    android:layout_marginStart="@dimen/_30pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="1234567821M"
+                    style="@style/txtPoppinsregular12"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:id="@+id/GuestDetail"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/checkin_out"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:id="@+id/title_guest"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="Guest detail"
+                        style="@style/txtPoppinsregular16"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtname"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="Xuan Thoai"
+                        style="@style/txtPoppinsregular12" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtemail"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="data@demo.cut"
+                        style="@style/txtPoppinsregular12" />
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtdayofbirth"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="Thu21 Feb 2023"
+                        style="@style/txtPoppinsregular12" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:id="@+id/PremiumDel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_marginBottom="@dimen/_20pxh"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/checkin_out"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:id="@+id/title_room"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="Time checkIn and check out"
+                        style="@style/txtPoppinsregular16"/>
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtcheckin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="2023-06-11"
+                        style="@style/txtPoppinsregular12" />
+
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtcheckout"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="2023-09-15"
+                        style="@style/txtPoppinsregular12"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/btnDone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_15pxv"
+            android:singleLine="true"
+            android:text="CANCEL"
+            android:textAllCaps="false"
+            style="@style/btnSolidRounded_1"/>
+    </LinearLayout>
+
+</LinearLayout>

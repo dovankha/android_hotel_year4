@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mybooking.My_booking">
+
+    <TextView
+        android:ellipsize="end"
+        android:gravity="start"
+        android:id="@+id/txtMyBooking"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_50pxh"
+        android:layout_marginTop="@dimen/_60pxv"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:text="@string/lbl_my_booking"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        tools:text="@string/lbl_my_booking"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mybooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMyBooking"
+        android:layout_marginTop="@dimen/_30pxh"
+        android:layout_marginStart="@dimen/_40pxh"
+        android:layout_marginEnd="@dimen/_40pxh"
+
+        tools:listitem="@layout/mybooking" />
+
+</RelativeLayout>

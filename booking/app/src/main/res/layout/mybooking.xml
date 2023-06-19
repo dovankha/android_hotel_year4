@@ -1,0 +1,111 @@
+<com.google.android.material.card.MaterialCardView
+    android:layout_marginTop="@dimen/_10pxh"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_140pxh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#EBFDFB"
+    app:cardCornerRadius="@dimen/_15pxh"
+    app:strokeWidth="1dp"
+    app:strokeColor="#009688"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/p1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/txthotelname"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.79"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="Phu yen"
+                style="@style/txtPoppinsbold20"
+                android:layout_marginTop="@dimen/_2pxv"/>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txttime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="25_june_2022"
+                style="@style/txtPoppinsregular12"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:ellipsize="end"
+            android:id="@+id/txtPrice"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_15pxh"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="$255"
+            style="@style/txtPoppinsbold20_1"/>
+
+        <View android:background="@color/gray_200"
+            android:id="@+id/lineLineNine"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_2pxv"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/p1"/>
+
+        <LinearLayout
+            android:id="@+id/p2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/lineLineNine"
+            android:orientation="horizontal">
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtbooking_id"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="Booking ID:"
+                style="@style/txtPoppinsregular12"/>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/bookingid"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="123456789"
+                style="@style/txtPoppinsregular12"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/status"
+            style="@style/txtPoppinsregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_below="@+id/lineLineNine"
+            android:text="Done"
+            android:layout_marginEnd="@dimen/_30pxh"/>
+
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

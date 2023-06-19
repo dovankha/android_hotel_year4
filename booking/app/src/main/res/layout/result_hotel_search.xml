@@ -1,0 +1,100 @@
+<com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="@dimen/_10pxh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300pxh"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="#EBFDFB"
+        app:cardCornerRadius="@dimen/_15pxh"
+        app:strokeWidth="1dp"
+        app:strokeColor="#009688">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_230pxh"
+                android:src="@mipmap/haven"
+                android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phu Yen"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phu Yen"
+                        android:textSize="8sp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5pxh"
+                        android:id="@+id/rating"
+                        android:numStars="5"
+                        android:rating="5.0"
+                        android:progressTint="@color/amber_500"
+                        style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxh"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(55 Review)"
+                        android:textSize="10sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_marginTop="@dimen/_7pxh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ 200"
+                        android:textSize="10sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

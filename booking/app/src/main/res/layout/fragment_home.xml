@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.home.Home">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/gray">-->
+
+    <!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+    <!--            android:id="@+id/collapsing_toolbar"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:contentScrim="@color/teal_200"-->
+    <!--            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">-->
+    <!--            &lt;!&ndash;         you can put any content you want to hide after scroll in header&ndash;&gt;-->
+    <!--            &lt;!&ndash;         as example in putting this image view&ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_90pxh"-->
+    <!--                android:layout_marginEnd="@dimen/_10pxh"-->
+    <!--                android:layout_marginStart="@dimen/_30pxh">-->
+    <!--                <TextView-->
+    <!--                    android:id="@+id/fullName"-->
+    <!--                    android:text="Hi, Xuan Thoai."-->
+    <!--                    android:textSize="18sp"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:fontFamily="@font/poppins"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"/>-->
+    <!--                <TextView-->
+    <!--                    android:id="@+id/hello"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:textSize="13sp"-->
+    <!--                    android:text="Where do you want to stay?"-->
+    <!--                    android:layout_below="@+id/fullName"/>-->
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/notify"-->
+    <!--                    android:layout_width="20dp"-->
+    <!--                    android:layout_height="20dp"-->
+    <!--                    android:layout_above="@id/hello"-->
+    <!--                    android:scaleType="fitXY"-->
+    <!--                    android:layout_marginStart="@dimen/_330pxh"-->
+    <!--                    android:src="@drawable/img_notification" />-->
+
+    <!--            </RelativeLayout>-->
+
+
+    <!--            <androidx.appcompat.widget.Toolbar-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:layout_collapseMode="pin">-->
+    <!--                <SearchView-->
+    <!--                    android:id="@+id/search"-->
+    <!--                    android:layout_marginTop="@dimen/_40pxh"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginStart="30dp"-->
+    <!--                    android:layout_marginEnd="30dp"-->
+    <!--                    android:layout_marginBottom="@dimen/_15pxh"-->
+    <!--                    android:background="@drawable/edittext_background"-->
+    <!--                    android:elevation="10dp"-->
+    <!--                    android:iconifiedByDefault="false"-->
+    <!--                    app:queryHint="Tim kiem ..."-->
+    <!--                    app:layout_collapseMode="pin"/>-->
+
+
+    <!--            </androidx.appcompat.widget.Toolbar>-->
+
+
+    <!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            style="@style/rounfimageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_20pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_30pxh">
+                <TextView
+                    android:id="@+id/fullName"
+                    android:text="Hi, Xuan Thoai."
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="Where do you want to stay?"
+                    android:layout_below="@+id/fullName"/>
+                <ImageView
+                    android:id="@+id/notify"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_above="@id/hello"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:src="@drawable/img_notification"
+                    android:layout_alignParentEnd="true"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_55pxh"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="@dimen/_5pxh"
+                    android:background="@drawable/edittext_background"
+                    android:elevation="10dp"
+                    android:focusable="false"
+                    android:iconifiedByDefault="false"
+                    android:inputType="none"
+                    app:layout_collapseMode="pin"
+                    app:queryHint="Tim kiem ..." />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/_10pxh"-->
+        <!--            android:layout_marginBottom="@dimen/_20pxh"-->
+        <!--            android:layout_marginEnd="@dimen/_10pxh"-->
+        <!--            android:layout_marginStart="@dimen/_30pxh">-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/fullName"-->
+        <!--                android:text="Hi, Xuan Thoai."-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:fontFamily="@font/poppins"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"/>-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/hello"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:textSize="13sp"-->
+        <!--                android:text="Where do you want to stay?"-->
+        <!--                android:layout_below="@+id/fullName"/>-->
+        <!--            <ImageView-->
+        <!--                android:id="@+id/notify"-->
+        <!--                android:layout_width="20dp"-->
+        <!--                android:layout_height="20dp"-->
+        <!--                android:layout_above="@id/hello"-->
+        <!--                android:scaleType="fitXY"-->
+        <!--                android:layout_marginStart="@dimen/_330pxh"-->
+        <!--                android:src="@drawable/img_notification" />-->
+
+        <!--        </RelativeLayout>-->
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/block2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/search"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxh"
+                    android:layout_marginEnd="@dimen/_10pxh">
+
+                    <TextView
+                        android:id="@+id/popular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Voucher"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/popular"
+                        android:layout_centerInParent="true"
+                        tools:listitem="@layout/promotion" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/block3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/framehotelpopular"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_15pxh"
+                    android:layout_marginEnd="@dimen/_10pxh">
+
+                    <TextView
+                        android:id="@+id/popularcity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Hotels Around You"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/popularcity"
+                        android:text="Here's some hotel recommendation in your city"
+                        android:textSize="13sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        tools:listitem="@layout/popular_hotel"
+                        android:layout_below="@+id/lo2"/>
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/block4"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/framecitypopular"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_25pxh"
+                    android:layout_marginEnd="@dimen/_10pxh">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_350pxh"
+                        android:layout_height="@dimen/_130pxh"
+                        android:background="@drawable/ads1">
+                    </ImageView>
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:id="@+id/poads"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        tools:listitem="@layout/popular_hotel"-->
+<!--                        android:layout_below="@+id/ads"/>-->
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/block5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_15pxh"
+                    android:layout_marginEnd="@dimen/_10pxh">
+
+                    <TextView
+                        android:id="@+id/ads1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Hotels Around You"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lo4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ads1"
+                        android:text="Here's some hotel recommendation in your city"
+                        android:textSize="13sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/poads1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        tools:listitem="@layout/popular_hotel"
+                        android:layout_below="@+id/lo4"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/block6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_25pxh"
+                    android:layout_marginEnd="@dimen/_10pxh">
+
+                    <ImageView
+                        android:layout_width="@dimen/_350pxh"
+                        android:layout_height="@dimen/_130pxh"
+                        android:background="@drawable/ads1"
+                        android:layout_marginBottom="@dimen/_70pxh"/>
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/ads2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:text="Hotels Around You"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/lo5"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/ads2"-->
+<!--                        android:text="Here's some hotel recommendation in your city"-->
+<!--                        android:textSize="13sp" />-->
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:id="@+id/poads2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        tools:listitem="@layout/popular_hotel"-->
+<!--                        android:layout_below="@+id/lo5"-->
+<!--                        android:layout_marginBottom="@dimen/_70pxh"/>-->
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

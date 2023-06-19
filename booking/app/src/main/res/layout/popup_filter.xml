@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    android:background="@drawable/round_corner"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="@dimen/_20pxh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_80pxh"
+        android:layout_marginStart="@dimen/_30pxh"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Price "/>
+
+    <LinearLayout android:id="@+id/linearRowmin"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:ellipsize="end"
+            android:id="@+id/txtMin"
+            android:layout_height="@dimen/_60pxh"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="@dimen/_150pxh"
+            android:singleLine="true"
+            android:hint="Min"
+            android:padding="@dimen/_20pxh"
+            style="@style/groupStylegray_200cornerRadius"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:ellipsize="end"
+            android:id="@+id/txtPrice"
+            android:layout_height="@dimen/_60pxh"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_20pxh"
+            android:singleLine="true"
+            android:hint="Max"
+            style="@style/groupStylegray_200cornerRadius"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_20pxh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_80pxh"
+        android:layout_marginStart="@dimen/_30pxh"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Hotel Star "/>
+
+
+    <LinearLayout android:id="@+id/linearRowOne"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25pxh"
+        android:layout_marginStart="@dimen/_30pxh"
+        android:layout_marginTop="@dimen/_15pxv"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout android:id="@+id/linearRowfive"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_60pxh"
+            android:orientation="horizontal"
+            style="@style/groupStylewhite_8">
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSixOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="5" />
+
+            <ImageView android:id="@+id/imageStarSix"
+                android:layout_height="@dimen/_9pxh"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_9pxh"
+                android:textAlignment="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_star6_9x9" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearRowfiveOne"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_60pxh"
+            android:orientation="horizontal" style="@style/groupStylewhite_8">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFiveOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="4" />
+            <ImageView android:id="@+id/imageStarSixOne"
+                android:layout_height="@dimen/_9pxh"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_9pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_star6_1" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearRowfiveTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_60pxh"
+            android:orientation="horizontal" style="@style/groupStylewhite_8">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFiveTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="3" />
+            <ImageView android:id="@+id/imageStarSixTwo"
+                android:layout_height="@dimen/_9pxh"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_9pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_star6_2" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearRowfiveThree"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_60pxh"
+            android:orientation="horizontal" style="@style/groupStylewhite_8">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFiveThree"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="2" />
+            <ImageView android:id="@+id/imageStarSixThree"
+                android:layout_height="@dimen/_9pxh"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_9pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_star6_3" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearRowfiveFour"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_60pxh"
+            android:orientation="horizontal" style="@style/groupStylewhite_8">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFiveFour"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="1" />
+            <ImageView android:id="@+id/imageStarSixFour"
+                android:layout_height="@dimen/_9pxh"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_9pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_star6_4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20pxh"
+        android:layout_marginTop="@dimen/_20pxh">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/btnNext"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_50pxh"
+            android:paddingStart="@dimen/_50pxh"
+            android:paddingTop="@dimen/_15pxv"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            style="@style/btnSolidRounded_1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReset"
+            style="@style/btnSolidRoundedOutline_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:paddingStart="@dimen/_50pxh"
+            android:paddingTop="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_50pxh"
+            android:paddingBottom="@dimen/_15pxv"
+            android:singleLine="true"
+            android:text="Reset"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

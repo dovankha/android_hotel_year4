@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300pxh"
+    app:cardCornerRadius="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageRectangle122"
+        android:layout_gravity="start"
+        android:layout_height="@dimen/_260pxh"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        app:strokeColor="@color/teal_400"
+        app:strokeWidth="1dp"
+        android:background="@color/teal_200"
+        app:shapeAppearanceOverlay="@style/rounfimageview"/>
+</RelativeLayout>
+

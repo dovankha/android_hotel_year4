@@ -1,0 +1,28 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_300pxh"
+    android:layout_height="@dimen/_170pxh"
+    android:layout_marginLeft="@dimen/_8pxh"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#EBFDFB"
+    app:cardCornerRadius="@dimen/_15pxh"
+    app:strokeWidth="1dp"
+    app:strokeColor="#009688">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/haven"
+            android:scaleType="fitXY"/>
+
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
