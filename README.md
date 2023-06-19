@@ -1,5 +1,5 @@
 # kha
-+ sdt: 0336221622 
++ sdt: 033****622 
 + otp: 123456
 
 + mail: dovankha.tlvn@gmail.com
